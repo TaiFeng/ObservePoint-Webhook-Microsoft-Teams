@@ -99,9 +99,9 @@ if($_SERVER['REQUEST_METHOD']=="POST") {
 
 //Populate the dynamic elements of the template
 	$teamsData = json_decode($teamsTemplate);
-	$teamsData->summary = "ObservePoint $itemType results";
-	$teamsData->sections[0]->activityTitle = "ObservePoint $itemType results";
-	$teamsData->sections[0]->activitySubtitle = "Run ID: $runId";
+	$teamsData->summary = "ObservePoint Run ID $runId results";
+	$teamsData->sections[0]->activityTitle = "'$itemName' $itemType results";
+	$teamsData->sections[0]->activitySubtitle = "ObservePoint $itemType run id $runId";
 	if(strlen($journeyStatus) == 0) {
 		$teamsData->sections[0]->facts[0]->name = "audit score";
 		$teamsData->sections[0]->facts[0]->value = "$auditScore";
