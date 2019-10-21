@@ -51,9 +51,9 @@ if($_SERVER['REQUEST_METHOD']=="POST") {
 	$opresult = json_decode(curl_exec($opch));
 	switch($itemType) {
 		case "audit":
-		$auditScore = $opresult->score;
-		$startedAt = $opresult->started;
-		$completedAt = $opresult->completed;
+		$auditScore = $opresult->runs[0]->score;
+		$startedAt = $opresult->runs[0]->started;
+		$completedAt = $opresult->runs[0]->completed;
 		$itemName = $opresult->name;
 		break;
 		case "web-journey":
