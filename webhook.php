@@ -58,8 +58,8 @@ if($_SERVER['REQUEST_METHOD']=="POST") {
 		break;
 		case "web-journey":
 		$journeyStatus = $opresult->status;
-		$startedAt = $opresult->startedAt;
-		$completedAt = $opresult->completedAt;
+		$startedAt = $opresult->lastCheck;
+		$completedAt = $opresult->nextCheck;
 		$itemName = $opresult->name;
 		break;
 		default:
