@@ -16,7 +16,7 @@ Query string parameters:
 Your PHP installation needs access to cURL
 
 # Variables to set in the file
-Line 2:  ObservePoint API Key
-Line 11: User-specified authentication token to ensure the right access
-Line 21: The Webhook URL provided by the Microsoft Teams integration (this is only needed if you don't populate the "redirect" query string parameter described in the Inputs section)
+- Line 2:  ObservePoint API Key
+- Line 11: User-specified authentication token to ensure the right access
+- Line 21: The Webhook URL provided by the Microsoft Teams integration (this is only needed if you don't populate the "redirect" query string parameter described in the Inputs section)
 
