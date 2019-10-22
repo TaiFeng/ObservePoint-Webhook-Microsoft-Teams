@@ -3,7 +3,9 @@ PHP integration of ObservePoint's Webhook into a Microsoft Teams notification.
 
 This tool is designed to accept a POST request from ObservePoint web audits and web journeys (entered into the Webhook URL section) and then generate a modified POST request that will create a rich notification in Microsoft Teams via its Webhook connector.
 
-ObservePoint Webhook Documentation: https://help.observepoint.com/articles/2879096-webhooks-use-cases
+Follow these instructions to set up the Webhook endpoint in Microsoft Teams: https://docs.microsoft.com/en-us/outlook/actionable-messages/send-via-connectors
+
+For additional reference, here is the ObservePoint Webhook Documentation: https://help.observepoint.com/articles/2879096-webhooks-use-cases
 
 # Inputs
 Example Request URL: https://mysite.com/webhook.php?token=user-auth-token&redirect=https%3A%2F%2Foutlook.office.com%2Fwebhook%2Fhex-code%2FIncomingWebhook%2Fhex-code
